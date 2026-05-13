@@ -1,0 +1,56 @@
+### find user by id
+GET http://localhost:3001/auth/3
+
+
+
+
+### find user by email
+GET http://localhost:3001/auth?email=muhammedthegreat@gmail.com
+
+### create user
+
+POST http://localhost:3001/auth/signup
+Content-Type: application/json
+
+{
+    "email": "gutsthegreat123@gmail.com",
+    "password": "MuhammedKerek123"
+}
+
+
+
+### signin user
+POST http://localhost:3001/auth/signin
+Content-Type: application/json
+
+{
+    "email": "gutsthegreat@gmail.com",
+    "password": "MuhammedKerek123"
+}
+
+### whoami
+GET http://localhost:3001/auth/whoami
+
+
+
+
+### remove user by id
+DELETE http://localhost:3001/auth/2
+
+
+### update user by id
+PATCH http://localhost:3001/auth/3
+Content-Type: application/json
+
+{
+    "email": "muhammedthegreat123@gmail.com" 
+}
+
+
+
+### signout user
+POST http://localhost:3001/auth/signout
+
+
+
+

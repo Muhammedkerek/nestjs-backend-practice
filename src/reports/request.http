@@ -1,0 +1,24 @@
+POST http://localhost:3001/reports
+Content-Type: application/json
+
+{
+  "make": "ford",
+  "model": "mustang",
+    "year": 1982,
+    "lat": 45,
+    "lng": 45,
+    "mileage": 50000,
+    "price": 20000
+}
+###
+
+PATCH http://localhost:3001/reports/7
+Content-Type: application/json
+
+{
+  "approved": true
+}
+
+
+###
+GET http://localhost:3001/reports?make=ford&model=mustang&year=1981&lat=45&lng=45&mileage=15000
